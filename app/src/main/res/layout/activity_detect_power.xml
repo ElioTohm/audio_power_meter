@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detect_power"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainthemecolor"
+    android:padding="20dp"
+    tools:context="bandindustries.com.powermeter.DetectPower">
+
+
+    <LinearLayout
+        android:id="@+id/cireclesView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--using 2 custom drawables to customize the progress bar-->
+        <ProgressBar android:id="@+id/progressBar"
+            android:progressDrawable="@drawable/redcircles"
+            android:background="@drawable/emptycircles"
+            android:layout_width="match_parent" android:layout_height="50dip"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:indeterminateOnly="false"
+            android:max="100">
+        </ProgressBar>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cireclesView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
