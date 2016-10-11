@@ -23,7 +23,7 @@
             android:progressDrawable="@drawable/redcircles"
             android:layout_centerInParent="true"
             android:background="@drawable/full_circles"
-            android:layout_width="match_parent" android:layout_height="50dip"
+            android:layout_width="200dp" android:layout_height="50dip"
             style="?android:attr/progressBarStyleHorizontal"
             android:indeterminateOnly="false"
             android:max="100">
